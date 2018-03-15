@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Portal Minerva</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="Pragma" content="no-cache">
+	<script src="js/jquery-2.2.2.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/tables.css">
+	<link rel="stylesheet" type="text/css" href="css/internalFrame_Minerva.css">
+	<script type="text/javascript" src="js/internalMainWindow.js"></script>
+	<script type="text/javascript" src="js/alumnos.js"></script>
+	</style>
+</head>
+<body>
+	<div class="content">
+		<button type="button" onclick="redirigir('create', 'al')">Agregar Alumnos</button>
+		<button type="button" onclick="modAl('al')">Modificar Curso Alumno</button>
+		<button type="button" onclick="deleteAl('al')">Eliminar Alumnos</button>
+		<p></p>
+		<div id="text" style="display: none;">Esta es la lista de alumnos matriculados en su asignatura<br><br></div>
+		<table align="center" class="pure-table" id="tabla">
+			<thead>
+			<tr>
+				<th id="radioCol"></th>
+				<th>Nombre</th>
+				<th>Apellidos</th>
+				<th>DNI</th>
+				<th>Email</th>
+				<th id="curseCol">Curso</th>
+			</tr>
+			</thead>
+	</table> <br>
+	<div id="Error"></div>
+	<div id="ChangeCurse" style="display: none;">
+			<form method="post" action="javascript:changeCurse()">
+				<p>Introduzca el nuevo curso <input type="number" id="curse" required></p>
+				<input type="submit" value ="Cambiar"/></p>
+			</form><br>
+	</div>
+	</div>
+</body>
+</html>

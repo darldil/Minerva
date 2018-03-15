@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Portal Minerva</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="Pragma" content="no-cache"> 
+	<script src="js/jquery-2.2.2.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/internalMainWindow.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/tables.css">
+	<link rel="stylesheet" type="text/css" href="css/internalFrame_Minerva.css">
+	</style>
+</head>
+<body>
+	<div id="content">
+		<a href="javascript: redirigir('start', 'null')"><img src="images/back.png"  style="vertical-align:text-top" width=30 height=30></a>
+		<br><br>
+		<form method="post" action="javascript:create(this)">
+		<table class="pure-table">
+			<thead><tr><th id = "columnas"><b>Rellene los siguientes campos</b></th></tr></thead>
+			<tr><td>Nombre</td><td> <input type=" text" id="nombre" required></td>
+			<td> <div id ="anho">Año </div> <div id ="anho">
+			<input type="text" id="anhoBox" placeholder="20xx - 20xx" required> </div>
+			<div  id = "otrosDatos">Apellidos </div></td><td id = "otrosDatos"> <input type=" text" id="ap" required> </td></tr>
+			<tr id = "otrosDatos"><td id = "otrosDatos">DNI </td><td id = "otrosDatos"><input type="text" id="DNI" required> </td>
+			<!--<td id = "otrosDatos">Email </td><td id = "otrosDatos"> <input type="text" id="email" required></td></tr>-->
+			<!--<tr id="asignatura">--><td id="asignatura">Asignatura </td><td id="asignatura"> <select id="as"> 
+			</select></td><!--<td></td><td></td></tr>--><td id="curso">Curso </td><td id = "curso"> 
+			<input type="number" id="cur" required></td>
+			<tr id="cursoRow"><td id="curso">Curso </td><td id = "curso"> 
+			<input type="number" id="cur" required></td><td id="cursotd"></td>
+			<!--<td id = "otrosDatos"></td><td id = "otrosDatos"> </td>--></tr>
+			</table>
+			<div id="Error"></div>
+			<p><input type="submit" value="Agregar"/></p>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Portal Minerva</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="Pragma" content="no-cache"> 
+	<script src="js/jquery-2.2.2.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/change.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/tables.css">
+	<link rel="stylesheet" type="text/css" href="css/internalFrame_Minerva.css">
+	</style>
+</head>
+<body>
+	<div id="content">
+		<a href="javascript: redirigir('start', null)"><img src="images/back.png"  style="vertical-align:text-top" width=30 height=30></a>
+		<br><br>
+		<form method="post" action="javascript:changePass(this)">
+		<table class="pure-table">
+			<tr><td>Introduzca la nueva contraseña</td><td> <input type="password" id="pass1" required></td></tr>
+			<tr><td> Repita la nueva contraseña</td> <td> <input type="password" id="pass2" required></td></tr>
+			</table>
+			<div id="Error"></div>
+			<p><input type="submit" value ="Cambiar"/></p>
+		</form><br>
+	</div>
+</body>
+</html>

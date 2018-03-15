@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Portal Minerva</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="Pragma" content="no-cache"> 
+	<link rel="stylesheet" type="text/css" href="css/MainWindow_Minerva.css">
+	</style>
+	<script src="js/jquery-2.2.2.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/MainWindow.js"></script>
+	<link rel="icon" href="images/logo.png">
+</head>
+<body>
+	<script>
+		checkCookie();
+	</script>
+	<header>
+		<h1><img src="images/logo.png" style="vertical-align:middle" width=50 height=60 alt="Minerva logo"> Minerva</h1>
+		<div class="enlacesSup">
+			<div id="enlacesSupText"></div>
+			<a href="javascript:redirigir('start')" >Inicio</a> |
+			<a href="javascript:cerrarSesion()">Cerrar Sesion</a> 
+		</div>
+	</header>
+	<br>
+	<nav role="main">
+		<ul class="listaNav">
+			<li id="Profile"><a href="javascript:redirigir('profile')" > Mi Perfil</a></li>
+			<li id="ListaAsignaturas"><a href="javascript:redirigir('as')" >Lista Asignaturas</a></li>
+			<li id="ListaProfesores"><a href="javascript:redirigir('pr')">Lista Profesores</a></li>
+			<li id="ListaAlumnos"><a href="javascript:redirigir('al')">Lista Alumnos</a></li>
+			<li id= "Calificaciones"><a href="javascript:redirigir('ca')">Calificaciones</a></li>
+		</ul>
+	</nav>
+	<section id="main">
+		<div id="content" src="home.html"></div>
+	</section>
+</body>
+</html>

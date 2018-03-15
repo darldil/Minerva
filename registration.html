@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Registro</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/registration_Minerva.css"></style>
+	<script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/registration.js"></script>
+	<link rel="icon" href="images/logo.png">
+</head>
+<body>
+	<header>
+		<!--<h1>Registro - Minerva</h1>-->
+		<img src="images/logo.png" style="vertical-align:text-top" width=366 height=444 alt="Minerva logo">
+	</header>
+	<br>
+	<section id="main">
+		<!--<a href="login.html"></a>-->
+		<img src="images/back.png"  style="vertical-align:text-top" width=30 height=30> <br>
+		<p>Introduzca sus datos personales. </p>
+		<form method="post" action="javascript:submit(this)">
+		<table>
+			<tr><td>DNI </td><td><input type="text" id="DNI" required> </td>
+			<td>Email </td><td> <input type="email" id="email" required></td></tr>
+			<tr><td>Contraseña</td><td> <input type="password" id="pass1" required> </td> </tr>
+			<tr><td>Repita la Contraseña </td><td><input type="password" id="pass2" required></td></tr>
+			</table>
+			<div id="Error"></div>
+			<p><input type="submit" value="Registrar" /></p>
+		</form>
+	</section>
+	<footer>
+		<h4>Minerva. Proyecto diseñado por Mauricio Abbati Loureiro para la Universidad
+		Complutense de Madrid.</h4>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Inicio</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/login_Minerva.css"></style>
+	<script src="js/jquery-2.2.2.min.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
+</head>
+<script language="javascript">
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+    }
+    return "";
+}
+
+function checkCookie() {
+    var cookie=getCookie("user");
+	
+    if (cookie=="") { window.location.href = "login.html";}
+	else { window.location.href = "MainWindow.html";}
+}
+</script>
+<body>
+<script>
+checkCookie();
+</script>
+</body>
+</html>

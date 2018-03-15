@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Inicio</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/login_Minerva.css"></style>
+	<script src="js/jquery-2.2.2.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
+	<link rel="icon" href="images/logo.png">
+</head>
+<body>
+	<header>
+		<!--<h1><img src="logo.png" style="vertical-align:middle" width=100 height=121 alt="Minerva logo"> Minerva</h1>-->
+		<img src="images/logo.png" style="vertical-align:text-top" width=366 height=444 alt="Minerva logo">
+	</header>
+	<br>
+	<section id="main" class="hidden">
+	<!--Modificado! -->
+		<div id="logoName"> Minerva</div> <br>
+		Introduzca su usuario y contraseña. 
+		<form class ="login" method="post" action="">
+			<p>Usuario <br><input type="text" id="user" placeholder="Email" required></p>
+			<p>Contraseña <br><input type="password" id="pass" required></p>
+			<div id="Error"></div>
+			<input type="submit" id="button" value="Iniciar Sesión" />
+			</form>
+			<div id="reg">No tienes cuenta? Registrate haciendo clic <u>aquí</u></div>
+	</section>
+	<footer>
+		<h4>Minerva. Proyecto diseñado por Mauricio Abbati Loureiro para la Universidad
+		Complutense de Madrid.</h4>
+	</footer>
+</body>
+</html>
